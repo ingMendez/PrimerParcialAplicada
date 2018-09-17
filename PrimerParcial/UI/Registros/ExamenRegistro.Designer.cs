@@ -37,7 +37,7 @@
             // button4
             // 
             this.button4.Image = global::PrimerParcial.Properties.Resources.Search_48px;
-            this.button4.Location = new System.Drawing.Point(274, 33);
+            this.button4.Location = new System.Drawing.Point(274, 45);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 62);
             this.button4.TabIndex = 3;

@@ -86,12 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BLL\" />
-    <Folder Include="DAL\Scripts\" />
     <Folder Include="Entidades\" />
     <Folder Include="UI\Consultas\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DAL\Scripts\Scripts.sql" />
     <Content Include="Resources\consultas.jpg" />
     <Content Include="Resources\EliminarRegistro.png" />
     <None Include="Resources\Search 48px1.png" />
