@@ -52,6 +52,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Registros\ExamenRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\ExamenRegistro.Designer.cs">
+      <DependentUpon>ExamenRegistro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,7 +69,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\Registros\ExamenRegistro.resx">
+      <DependentUpon>ExamenRegistro.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -70,6 +83,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\" />
+    <Folder Include="DAL\Scripts\" />
+    <Folder Include="Entidades\" />
+    <Folder Include="UI\Consultas\" />
+    <Folder Include="UI\Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\consultas.jpg" />
+    <Content Include="Resources\EliminarRegistro.png" />
+    <None Include="Resources\Search 48px1.png" />
+    <None Include="Resources\salir1.jpg" />
+    <None Include="Resources\registro1.jpg" />
+    <None Include="Resources\guardarRegistro1.png" />
+    <None Include="Resources\examenes1.png" />
+    <None Include="Resources\EliminarRegistro1.png" />
+    <Content Include="Resources\examenes.png" />
+    <Content Include="Resources\guardarRegistro.png" />
+    <Content Include="Resources\nuevoRegsitro.png" />
+    <None Include="Resources\nuevoRegsitro1.png" />
+    <Content Include="Resources\registro.jpg" />
+    <Content Include="Resources\salir.jpg" />
+    <Content Include="Resources\Search 48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
