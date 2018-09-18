@@ -165,15 +165,17 @@ namespace PrimerParcial.UI.Registros
                 }
             }
 
+       
         private void rotacionNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            int csualdo =0;
-            int cretencion  =0;
-            Convert.ToInt32(sueldoNumericUpDown.Value =csualdo);
-         
-            Convert.ToInt32(retencionNumericUpDown.Value = cretencion);
-            VendedorBLL c = new VendedorBLL();
-            c.calculo(csualdo,cretencion);
+
+
+            rotacionNumericUpDown.Value = (sueldoNumericUpDown.Value * retencionNumericUpDown.Value)/100;
+           // int csualdo =0;
+           // int cretencion  =0;
+           ////Convert.ToInt32(retencionNumericUpDown.Value = cretencion);
+           // VendedorBLL c = new VendedorBLL();
+           // c.calculo(csualdo,cretencion);
         }
     }
 }

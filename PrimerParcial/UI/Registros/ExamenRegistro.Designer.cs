@@ -157,6 +157,7 @@
             // 
             // sueldoNumericUpDown
             // 
+            this.sueldoNumericUpDown.DecimalPlaces = 2;
             this.sueldoNumericUpDown.Location = new System.Drawing.Point(112, 144);
             this.sueldoNumericUpDown.Maximum = new decimal(new int[] {
             10000,
@@ -169,6 +170,7 @@
             // 
             // retencionNumericUpDown
             // 
+            this.retencionNumericUpDown.DecimalPlaces = 2;
             this.retencionNumericUpDown.Location = new System.Drawing.Point(149, 183);
             this.retencionNumericUpDown.Name = "retencionNumericUpDown";
             this.retencionNumericUpDown.Size = new System.Drawing.Size(120, 20);
@@ -180,6 +182,8 @@
             // 
             // rotacionNumericUpDown
             // 
+            this.rotacionNumericUpDown.DecimalPlaces = 2;
+            this.rotacionNumericUpDown.Enabled = false;
             this.rotacionNumericUpDown.Location = new System.Drawing.Point(128, 217);
             this.rotacionNumericUpDown.Maximum = new decimal(new int[] {
             10000,
