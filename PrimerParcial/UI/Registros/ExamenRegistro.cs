@@ -103,7 +103,7 @@ namespace PrimerParcial.UI.Registros
             vendedor.Nombre = nombreTextBox.Text;
             vendedor.retencion = Convert.ToInt32(retencionNumericUpDown.Value);
             vendedor.rotacion = Convert.ToInt32(rotacionNumericUpDown.Value); 
-            vendedor.sueldo = Convert.ToInt32(sueldoNumericUpDown);
+            vendedor.sueldo = Convert.ToInt32(sueldoNumericUpDown.Value);
 
 
             return vendedor;
@@ -167,9 +167,10 @@ namespace PrimerParcial.UI.Registros
 
         private void rotacionNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            int csualdo = 0;
+            int csualdo =0;
+            int cretencion  =0;
             Convert.ToInt32(sueldoNumericUpDown.Value =csualdo);
-            int cretencion = 0;
+         
             Convert.ToInt32(retencionNumericUpDown.Value = cretencion);
             VendedorBLL c = new VendedorBLL();
             c.calculo(csualdo,cretencion);

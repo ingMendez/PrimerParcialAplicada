@@ -34,10 +34,10 @@
             System.Windows.Forms.Label sueldoLabel;
             System.Windows.Forms.Label retencionLabel;
             System.Windows.Forms.Label rotacionLabel1;
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Buscar_button = new System.Windows.Forms.Button();
+            this.Elimiinar_button = new System.Windows.Forms.Button();
+            this.Gualdar_button = new System.Windows.Forms.Button();
+            this.Nuevo_button = new System.Windows.Forms.Button();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.vendedorIdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.sueldoNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -101,45 +101,45 @@
             rotacionLabel1.TabIndex = 14;
             rotacionLabel1.Text = "rotacion:";
             // 
-            // button4
+            // Buscar_button
             // 
-            this.button4.Image = global::PrimerParcial.Properties.Resources.Search_48px;
-            this.button4.Location = new System.Drawing.Point(306, 32);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 62);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Buscar_button.Image = global::PrimerParcial.Properties.Resources.Search_48px;
+            this.Buscar_button.Location = new System.Drawing.Point(306, 32);
+            this.Buscar_button.Name = "Buscar_button";
+            this.Buscar_button.Size = new System.Drawing.Size(75, 62);
+            this.Buscar_button.TabIndex = 3;
+            this.Buscar_button.UseVisualStyleBackColor = true;
+            this.Buscar_button.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // Elimiinar_button
             // 
-            this.button3.Image = global::PrimerParcial.Properties.Resources.EliminarRegistro;
-            this.button3.Location = new System.Drawing.Point(306, 284);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 59);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Elimiinar_button.Image = global::PrimerParcial.Properties.Resources.EliminarRegistro;
+            this.Elimiinar_button.Location = new System.Drawing.Point(306, 284);
+            this.Elimiinar_button.Name = "Elimiinar_button";
+            this.Elimiinar_button.Size = new System.Drawing.Size(75, 59);
+            this.Elimiinar_button.TabIndex = 2;
+            this.Elimiinar_button.UseVisualStyleBackColor = true;
+            this.Elimiinar_button.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // Gualdar_button
             // 
-            this.button2.Image = global::PrimerParcial.Properties.Resources.guardarRegistro;
-            this.button2.Location = new System.Drawing.Point(190, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 59);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Gualdar_button.Image = global::PrimerParcial.Properties.Resources.guardarRegistro;
+            this.Gualdar_button.Location = new System.Drawing.Point(190, 284);
+            this.Gualdar_button.Name = "Gualdar_button";
+            this.Gualdar_button.Size = new System.Drawing.Size(75, 59);
+            this.Gualdar_button.TabIndex = 1;
+            this.Gualdar_button.UseVisualStyleBackColor = true;
+            this.Gualdar_button.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // Nuevo_button
             // 
-            this.button1.Image = global::PrimerParcial.Properties.Resources.nuevoRegsitro;
-            this.button1.Location = new System.Drawing.Point(62, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 59);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Nuevo_button.Image = global::PrimerParcial.Properties.Resources.nuevoRegsitro;
+            this.Nuevo_button.Location = new System.Drawing.Point(62, 284);
+            this.Nuevo_button.Name = "Nuevo_button";
+            this.Nuevo_button.Size = new System.Drawing.Size(75, 59);
+            this.Nuevo_button.TabIndex = 0;
+            this.Nuevo_button.UseVisualStyleBackColor = true;
+            this.Nuevo_button.Click += new System.EventHandler(this.button1_Click);
             // 
             // nombreTextBox
             // 
@@ -158,6 +158,11 @@
             // sueldoNumericUpDown
             // 
             this.sueldoNumericUpDown.Location = new System.Drawing.Point(112, 144);
+            this.sueldoNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.sueldoNumericUpDown.Name = "sueldoNumericUpDown";
             this.sueldoNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.sueldoNumericUpDown.TabIndex = 10;
@@ -176,6 +181,11 @@
             // rotacionNumericUpDown
             // 
             this.rotacionNumericUpDown.Location = new System.Drawing.Point(128, 217);
+            this.rotacionNumericUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.rotacionNumericUpDown.Name = "rotacionNumericUpDown";
             this.rotacionNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.rotacionNumericUpDown.TabIndex = 15;
@@ -196,10 +206,10 @@
             this.Controls.Add(this.vendedorIdNumericUpDown);
             this.Controls.Add(nombreLabel);
             this.Controls.Add(this.nombreTextBox);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Buscar_button);
+            this.Controls.Add(this.Elimiinar_button);
+            this.Controls.Add(this.Gualdar_button);
+            this.Controls.Add(this.Nuevo_button);
             this.Name = "ExamenRegistro";
             this.Text = "ExamenRegistro";
             this.Load += new System.EventHandler(this.ExamenRegistro_Load);
@@ -215,10 +225,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Nuevo_button;
+        private System.Windows.Forms.Button Gualdar_button;
+        private System.Windows.Forms.Button Elimiinar_button;
+        private System.Windows.Forms.Button Buscar_button;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.NumericUpDown vendedorIdNumericUpDown;
         private System.Windows.Forms.NumericUpDown sueldoNumericUpDown;

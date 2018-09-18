@@ -26,7 +26,7 @@ namespace PrimerParcial.Entidades
             public Vendedor()
             {
                 VendedorId = 0;
-             Nombre = string.Empty;
+                 Nombre = string.Empty;
                 sueldo = 0;
                 rotacion = 0;
                 retencion = 0;
