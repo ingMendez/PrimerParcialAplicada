@@ -167,6 +167,7 @@
             this.sueldoNumericUpDown.Name = "sueldoNumericUpDown";
             this.sueldoNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.sueldoNumericUpDown.TabIndex = 10;
+            this.sueldoNumericUpDown.ValueChanged += new System.EventHandler(this.rotacionNumericUpDown_ValueChanged);
             // 
             // retencionNumericUpDown
             // 
@@ -175,6 +176,7 @@
             this.retencionNumericUpDown.Name = "retencionNumericUpDown";
             this.retencionNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.retencionNumericUpDown.TabIndex = 14;
+            this.retencionNumericUpDown.ValueChanged += new System.EventHandler(this.rotacionNumericUpDown_ValueChanged);
             // 
             // SuperErrorProvider
             // 
