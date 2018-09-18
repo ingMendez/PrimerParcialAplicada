@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\VendedorBLL.cs" />
+    <Compile Include="DAL\Contexto.cs" />
+    <Compile Include="Entidades\Entidades.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +77,7 @@
     <EmbeddedResource Include="UI\Registros\ExamenRegistro.resx">
       <DependentUpon>ExamenRegistro.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\PrimerParcial.Entidades.Entidades.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,8 +89,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="Entidades\" />
     <Folder Include="UI\Consultas\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
@@ -107,6 +109,11 @@
     <Content Include="Resources\registro.jpg" />
     <Content Include="Resources\salir.jpg" />
     <Content Include="Resources\Search 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="entityFramework">
+      <Version>6.2.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

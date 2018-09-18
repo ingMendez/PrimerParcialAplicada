@@ -37,5 +37,9 @@ namespace PrimerParcial
         {
             Close();
         }
+
+        internal class Entidades
+        {
+        }
     }
 }
