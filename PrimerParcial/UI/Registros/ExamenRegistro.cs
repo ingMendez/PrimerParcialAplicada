@@ -141,6 +141,7 @@ namespace PrimerParcial.UI.Registros
 
 
             }
+            Nuevo_button.PerformClick();
 
         }
 
@@ -161,7 +162,7 @@ namespace PrimerParcial.UI.Registros
                 else
                 {
                     MessageBox.Show("No se puede eliminar  que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //Nuevo_button.PerformClick();
+                   Nuevo_button.PerformClick();
                 }
             }
 
