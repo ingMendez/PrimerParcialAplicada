@@ -1,4 +1,5 @@
-﻿using PrimerParcial.UI.Registros;
+﻿using PrimerParcial.UI.Consultas;
+using PrimerParcial.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,8 @@ namespace PrimerParcial
 
         private void Consultar_Click(object sender, EventArgs e)
         {
-            
+            ExamenCosultas c = new ExamenCosultas();
+            c.ShowDialog();
         }
 
         private void PrimerParcial_Load(object sender, EventArgs e)

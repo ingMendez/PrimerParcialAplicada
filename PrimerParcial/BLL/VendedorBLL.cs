@@ -24,7 +24,7 @@ namespace PrimerParcial.BLL
 
             try
             {
-                if (contexto.vende.Add(vendedor) != null)
+                if (contexto.Vende.Add(vendedor) != null)
                 {
                     contexto.SaveChanges();
                     paso = true;
@@ -55,7 +55,6 @@ namespace PrimerParcial.BLL
                 throw;
             }
             return paso;
-
         }
         public static bool Eliminar(int id)
         {
@@ -64,8 +63,8 @@ namespace PrimerParcial.BLL
 
             try
             {
-                Vendedor vendedor = contexto.vende.Find(id);
-                contexto.vende.Remove(vendedor);
+                Vendedor vendedor = contexto.Vende.Find(id);
+                contexto.Vende.Remove(vendedor);
 
                 if (contexto.SaveChanges() > 0)
                 {
@@ -85,7 +84,7 @@ namespace PrimerParcial.BLL
             Vendedor vende = new Vendedor();
             try
             {
-                vende = contexto.vende.Find(id);
+                vende = contexto.Vende.Find(id);
                 contexto.Dispose();
             }
             catch (Exception)
@@ -95,14 +94,14 @@ namespace PrimerParcial.BLL
             return vende;
         }
 
-        public static List<Vendedor> GetList(Expression<Func<Vendedor, bool>> expression)
+        public static List<Vendedor> GetList(Expression<Func<Vendedor, bool>>expression)
         {
             List<Vendedor>  vendedor = new List<Vendedor>();
             Contexto contexto = new Contexto();
 
             try
             {
-                vendedor = contexto.vende.Where(expression).ToList();
+                vendedor = contexto.Vende.Where(expression).ToList();
                 contexto.Dispose();
             }
             catch (Exception)

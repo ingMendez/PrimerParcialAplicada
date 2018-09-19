@@ -21,14 +21,14 @@ namespace PrimerParcial.UI.Registros
         private bool GuardarValidar()
         {
             bool paso = true;
-           
+
 
             if (string.IsNullOrWhiteSpace(nombreTextBox.Text))
             {
                 SuperErrorProvider.SetError(nombreTextBox, "Debe Llenar el campo ");
                 paso = false;
             }
-          
+
             if (sueldoNumericUpDown.Value == 0)
             {
                 SuperErrorProvider.SetError(sueldoNumericUpDown, "Falto Digitar ");
@@ -39,7 +39,12 @@ namespace PrimerParcial.UI.Registros
                 SuperErrorProvider.SetError(retencionNumericUpDown, "Falto digitar laretencion");
                 paso = false;
             }
-          
+            if (Fecha_dateTimePicker.Value != DateTime.Now && Fecha_dateTimePicker.Value < DateTime.Now)
+            {
+                SuperErrorProvider.SetError(Fecha_dateTimePicker, "Debe digitar una fecha mayor");
+                    paso = false;
+                
+            }
             return paso;
         }
 
@@ -51,7 +56,7 @@ namespace PrimerParcial.UI.Registros
             retencionNumericUpDown.Value = 0;
             rotacionNumericUpDown.Value = 0;
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             
                 SuperErrorProvider.Clear();
@@ -78,7 +83,7 @@ namespace PrimerParcial.UI.Registros
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
@@ -87,9 +92,9 @@ namespace PrimerParcial.UI.Registros
         {
             Convert.ToInt32(vendedorIdNumericUpDown.Value = vendedor.VendedorId);
             nombreTextBox.Text = vendedor.Nombre;
-            Convert.ToInt32(retencionNumericUpDown.Value = vendedor.retencion);
-            Convert.ToInt32(sueldoNumericUpDown.Value = vendedor.sueldo);
-            Convert.ToInt32(rotacionNumericUpDown.Value = vendedor.rotacion);
+            Convert.ToInt32(retencionNumericUpDown.Value = vendedor.Retencion);
+            Convert.ToInt32(sueldoNumericUpDown.Value = vendedor.Sueldo);
+            Convert.ToInt32(rotacionNumericUpDown.Value = vendedor.Rotacion);
 
 
             return vendedor;
@@ -101,15 +106,15 @@ namespace PrimerParcial.UI.Registros
 
             vendedor.VendedorId = Convert.ToInt32(vendedorIdNumericUpDown.Value);
             vendedor.Nombre = nombreTextBox.Text;
-            vendedor.retencion = Convert.ToInt32(retencionNumericUpDown.Value);
-            vendedor.rotacion = Convert.ToInt32(rotacionNumericUpDown.Value); 
-            vendedor.sueldo = Convert.ToInt32(sueldoNumericUpDown.Value);
+            vendedor.Retencion = Convert.ToInt32(retencionNumericUpDown.Value);
+            vendedor.Rotacion = Convert.ToInt32(rotacionNumericUpDown.Value); 
+            vendedor.Sueldo = Convert.ToInt32(sueldoNumericUpDown.Value);
 
 
             return vendedor;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             SuperErrorProvider.Clear();
             int id = (int)vendedorIdNumericUpDown.Value;
@@ -145,7 +150,7 @@ namespace PrimerParcial.UI.Registros
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
            
                 SuperErrorProvider.Clear();
@@ -167,16 +172,22 @@ namespace PrimerParcial.UI.Registros
             }
 
        
-        private void rotacionNumericUpDown_ValueChanged(object sender, EventArgs e)
+        private void RotacionNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
 
 
             rotacionNumericUpDown.Value = (sueldoNumericUpDown.Value * retencionNumericUpDown.Value)/100;
-           // int csualdo =0;
-           // int cretencion  =0;
-           ////Convert.ToInt32(retencionNumericUpDown.Value = cretencion);
-           // VendedorBLL c = new VendedorBLL();
-           // c.calculo(csualdo,cretencion);
+         
+        }
+
+        private void NombreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NombreTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

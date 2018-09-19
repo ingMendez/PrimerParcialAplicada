@@ -11,14 +11,14 @@ namespace PrimerParcial.DAL
   
     public class Contexto : DbContext
         {
-          public DbSet<Vendedor> vende { get; set;}
+          public DbSet<Vendedor> Vende { get; set;}
 
         public Contexto() : base("ConStr")
         {
 
         }
-    }
-    }
+     }
+   }
 
 
 

@@ -17,19 +17,22 @@ namespace PrimerParcial.Entidades
 
             public string Nombre { get; set; }
 
-            public int sueldo { get; set; }
+            public decimal Sueldo { get; set; }
 
-            public int rotacion { get; set; }
+            public decimal Rotacion { get; set; }
 
-            public int retencion { get; set; }
+            public decimal Retencion { get; set; }
 
-            public Vendedor()
+        public DateTime Fecha { get; set; }
+
+        public Vendedor()
             {
                 VendedorId = 0;
-                 Nombre = string.Empty;
-                sueldo = 0;
-                rotacion = 0;
-                retencion = 0;
+                Nombre = string.Empty;
+                Sueldo = 0;
+                Rotacion = 0;
+                Retencion = 0;
+                Fecha = DateTime.Now;
             }
 
 

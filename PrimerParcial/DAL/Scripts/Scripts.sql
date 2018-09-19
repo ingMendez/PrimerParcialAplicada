@@ -5,11 +5,12 @@ GO
 
 create Table Vendedor
 (
-  Venderdor int primary key,
-  Nombre var(30),
-  sueldo int,
-  Rotacion int,
-  Retencion int
+  VenderdorId int primary key,
+  Fecha dateTime,
+  Nombre varchar(30),
+  Sueldo money,
+  Rotacion money,
+  Retencion money
 );
 
----Select * from Vendedor
+select *from Vendedor
