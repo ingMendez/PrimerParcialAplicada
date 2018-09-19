@@ -173,32 +173,35 @@
             // 
             // Elimiinar_button
             // 
+            this.Elimiinar_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Elimiinar_button.Image = global::PrimerParcial.Properties.Resources.EliminarRegistro;
             this.Elimiinar_button.Location = new System.Drawing.Point(306, 284);
             this.Elimiinar_button.Name = "Elimiinar_button";
             this.Elimiinar_button.Size = new System.Drawing.Size(75, 59);
             this.Elimiinar_button.TabIndex = 2;
-            this.Elimiinar_button.UseVisualStyleBackColor = true;
+            this.Elimiinar_button.UseVisualStyleBackColor = false;
             this.Elimiinar_button.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Gualdar_button
             // 
+            this.Gualdar_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Gualdar_button.Image = global::PrimerParcial.Properties.Resources.guardarRegistro;
             this.Gualdar_button.Location = new System.Drawing.Point(190, 284);
             this.Gualdar_button.Name = "Gualdar_button";
             this.Gualdar_button.Size = new System.Drawing.Size(75, 59);
             this.Gualdar_button.TabIndex = 1;
-            this.Gualdar_button.UseVisualStyleBackColor = true;
+            this.Gualdar_button.UseVisualStyleBackColor = false;
             this.Gualdar_button.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Nuevo_button
             // 
+            this.Nuevo_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Nuevo_button.Image = global::PrimerParcial.Properties.Resources.nuevoRegsitro;
             this.Nuevo_button.Location = new System.Drawing.Point(62, 284);
             this.Nuevo_button.Name = "Nuevo_button";
             this.Nuevo_button.Size = new System.Drawing.Size(75, 59);
             this.Nuevo_button.TabIndex = 0;
-            this.Nuevo_button.UseVisualStyleBackColor = true;
+            this.Nuevo_button.UseVisualStyleBackColor = false;
             this.Nuevo_button.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Fecha_dateTimePicker
@@ -222,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(449, 410);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Fecha_dateTimePicker);

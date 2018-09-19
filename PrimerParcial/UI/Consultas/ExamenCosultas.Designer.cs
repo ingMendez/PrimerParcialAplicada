@@ -120,9 +120,9 @@
             // Consulta_dataGridView
             // 
             this.Consulta_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Consulta_dataGridView.Location = new System.Drawing.Point(12, 194);
+            this.Consulta_dataGridView.Location = new System.Drawing.Point(2, 195);
             this.Consulta_dataGridView.Name = "Consulta_dataGridView";
-            this.Consulta_dataGridView.Size = new System.Drawing.Size(551, 275);
+            this.Consulta_dataGridView.Size = new System.Drawing.Size(608, 284);
             this.Consulta_dataGridView.TabIndex = 8;
             // 
             // Consultar_button
@@ -143,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(575, 481);
+            this.ClientSize = new System.Drawing.Size(611, 481);
             this.Controls.Add(this.Consultar_button);
             this.Controls.Add(this.Consulta_dataGridView);
             this.Controls.Add(this.label4);
@@ -156,6 +156,7 @@
             this.Controls.Add(this.Filtro_comboBox);
             this.Name = "ExamenCosultas";
             this.Text = "ExamenCosultas";
+            this.Load += new System.EventHandler(this.ExamenCosultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Consulta_dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

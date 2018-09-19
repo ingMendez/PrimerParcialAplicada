@@ -36,11 +36,13 @@ namespace PrimerParcial.UI.Consultas
                     filtro = a => a.VendedorId == id;
                     break;
                 case 2:// por nombre
-                       //   id = Convert.ToInt32(Criterio_textBox.Text);
+                    
                     filtro = a => a.Nombre.Contains(Criterio_textBox.Text);
                     break;
+                                      
                 case 3:
                     filtro = a => a.Fecha >= Desde_dateTimePicker.Value.Date && a.Fecha <= Hasta_dateTimePicker.Value.Date;
+                    
                     break;
 
             }
@@ -53,6 +55,11 @@ namespace PrimerParcial.UI.Consultas
         }
 
         private void Criterio_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExamenCosultas_Load(object sender, EventArgs e)
         {
 
         }
