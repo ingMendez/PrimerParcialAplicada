@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace PrimerParcial.BLL
 {
@@ -78,6 +79,7 @@ namespace PrimerParcial.BLL
             }
             return paso;
         }
+       
         public static Vendedor Buscar(int id)
         {
             Contexto contexto = new Contexto();

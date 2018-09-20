@@ -106,7 +106,7 @@
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Hasta";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // label4
             // 
@@ -120,7 +120,7 @@
             // Consulta_dataGridView
             // 
             this.Consulta_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Consulta_dataGridView.Location = new System.Drawing.Point(2, 195);
+            this.Consulta_dataGridView.Location = new System.Drawing.Point(1, 195);
             this.Consulta_dataGridView.Name = "Consulta_dataGridView";
             this.Consulta_dataGridView.Size = new System.Drawing.Size(608, 284);
             this.Consulta_dataGridView.TabIndex = 8;
